@@ -1,0 +1,10 @@
+:root>* {
+  /* --md-primary-fg-color: #be1212;
+  --md-primary-fg-color--light: #be1212;
+  --md-primary-fg-color--dark: #be1212; */
+
+  --md-code-hl-variable-color: #ed5565;
+  --md-code-hl-constant-color: #8cc152;
+  --md-code-hl-operator-color: #f10fad;
+  --md-code-hl-string-color: #ccd1d9;
+}
