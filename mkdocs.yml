@@ -1,0 +1,53 @@
+site_name: Formation Powershell Niv. 1
+repo_name: squidfunk/mkdocs-material
+theme:
+  name: 'material'
+  features:
+    #- navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: fr
+  icon:
+    repo: fontawesome/brands/git-alt
+  font:
+    text: 'Montserrat'
+    code: 'Fira Mono'
+  logo: logo.png
+  palette:
+     - scheme: slate
+       primary: light blue
+       toggle:
+         icon: material/brightness-4
+         name: Switch to light mode
+     - scheme: default
+       primary: light blue
+       toggle:
+         icon: material/brightness-7
+         name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+        
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
