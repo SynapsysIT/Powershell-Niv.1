@@ -1,4 +1,6 @@
-# Les Objets
+# Pipeline & Objets
+
+## Les Objets
 
 * Contrairement à **Batch** ou **Bash** qui sont des langages « textes ».Powershell est un langage objet.
 
@@ -6,10 +8,9 @@
 
 ![objet](assets/objets.png)
 
-___
-# Le Pipeline
+## Le Pipeline
 
-* Le pipeline, symbolisée par le caractère **|** `[AltGr] + [6]` permet de **chainer** plusieurs commandes entre elles.
+* Le pipeline, symbolisée par le caractère **|** ++altgr+6++ permet de **chainer** plusieurs commandes entre elles.
 
 * Autrement dit, la sortie d'une commande correspond à l'entrée de la suivante.
 
@@ -17,7 +18,7 @@ ___
 
 
 ```powershell
-Get-Process  -Name notepad 
+Get-Process  -Name notepad
 Stop-Process -Name notepad
 ```
 
@@ -28,20 +29,14 @@ Get-Process  -Name notepad | Stop-Process
 # Get-Member
 
 ```powershell
-PS> Get-Process | Get-Member
+Get-Process | Get-Member
+```
 
+```text title="Output ❱"
    TypeName: System.Diagnostics.Process
 
 Name                       MemberType     Definition
 ----                       ----------     ----------
-Handles                    AliasProperty  Handles = Handlecount
-Name                       AliasProperty  Name = ProcessName
-NPM                        AliasProperty  NPM = NonpagedSystemMemorySize64
-PM                         AliasProperty  PM = PagedMemorySize64
-SI                         AliasProperty  SI = SessionId
-VM                         AliasProperty  VM = VirtualMemorySize64
-WS                         AliasProperty  WS = WorkingSet64
-Parent                     CodeProperty   System.Object Parent{get=GetParentProcess;}
 Disposed                   Event          System.EventHandler Disposed(System.Object, System.EventArgs)
 ErrorDataReceived          Event          System.Diagnostics.DataReceivedEventHandler ErrorDataReceived(System.Object, System.Diagnostics.…
 Exited                     Event          System.EventHandler Exited(System.Object, System.EventArgs)
