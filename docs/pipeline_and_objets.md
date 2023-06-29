@@ -1,18 +1,18 @@
 # Pipeline & Objets
 
-## Les Objets
+## Language Objet
 
-* Contrairement à **Batch** ou **Bash** qui sont des langages « textes ».Powershell est un langage objet.
+* Contrairement à **Batch** ou **Bash** qui sont des langages dit « textes », **Powershell est un langage objet**.
 
-* Sous **PowerShell**, chaque commande renverra un objet d’un type précis possédant ses propriétés et ses méthodes.
+* Sous PowerShell, chaque commande renverra un objet d’un type précis possédant ses **propriétés** et ses **méthodes**.
 
 ![objet](assets/objets.png)
 
 ## Le Pipeline
 
-* Le pipeline, symbolisée par le caractère **|** ++altgr+6++ permet de **chainer** plusieurs commandes entre elles.
+* Le pipeline, symbolisée par le caractère **|** ( ++altgr+6++ ) permet de **chainer** plusieurs commandes entre elles.
 
-* Autrement dit, la sortie d'une commande correspond à l'entrée de la suivante.
+* Autrement dit, la **sortie** d'une commande correspond à l'**entrée** de la suivante.
 
 * Les valeurs des paramètres de la deuxième commande lui sont fourni par la première commande.
 
@@ -24,38 +24,5 @@ Stop-Process -Name notepad
 
 ```powershell
 Get-Process  -Name notepad | Stop-Process
-```
-
-# Get-Member
-
-```powershell
-Get-Process | Get-Member
-```
-
-```text title="Output ❱"
-   TypeName: System.Diagnostics.Process
-
-Name                       MemberType     Definition
-----                       ----------     ----------
-Disposed                   Event          System.EventHandler Disposed(System.Object, System.EventArgs)
-ErrorDataReceived          Event          System.Diagnostics.DataReceivedEventHandler ErrorDataReceived(System.Object, System.Diagnostics.…
-Exited                     Event          System.EventHandler Exited(System.Object, System.EventArgs)
-OutputDataReceived         Event          System.Diagnostics.DataReceivedEventHandler OutputDataReceived(System.Object, System.Diagnostics…
-BeginErrorReadLine         Method         void BeginErrorReadLine()
-BeginOutputReadLine        Method         void BeginOutputReadLine()
-CancelErrorRead            Method         void CancelErrorRead()
-CancelOutputRead           Method         void CancelOutputRead()
-Close                      Method         void Close()
-CloseMainWindow            Method         bool CloseMainWindow()
-Dispose                    Method         void Dispose(), void IDisposable.Dispose()
-Equals                     Method         bool Equals(System.Object obj)
-GetHashCode                Method         int GetHashCode()
-GetLifetimeService         Method         System.Object GetLifetimeService()
-GetType                    Method         type GetType()
-InitializeLifetimeService  Method         System.Object InitializeLifetimeService()
-Kill                       Method         void Kill(), void Kill(bool entireProcessTree)
-Refresh                    Method         void Refresh()
-Start                      Method         bool Start()
-ToString                   Method         string ToString()
 ```
 
