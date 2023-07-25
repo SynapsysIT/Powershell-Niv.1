@@ -1,3 +1,8 @@
+---
+icon: git-pull-request-draft
+order: 998
+---
+
 # Pipeline & Objets
 
 ## Language Objet
@@ -10,11 +15,11 @@
 
 ## Le Pipeline
 
-* Le pipeline, symbolisée par le caractère **|** ( ++altgr+6++ ) permet de **chainer** plusieurs commandes entre elles.
+Le pipeline, symbolisée par le caractère [!badge variant="danger" text="|"] [!badge variant="contrast" text="AltGr + 6"] permet de **chainer** plusieurs commandes entre elles.
 
-* Autrement dit, la **sortie** d'une commande correspond à l'**entrée** de la suivante.
+Autrement dit, la **sortie** d'une commande correspond à l'**entrée** de la suivante.
 
-* Les valeurs des paramètres de la deuxième commande lui sont fourni par la première commande.
+Les valeurs des paramètres de la deuxième commande lui sont fourni par la première commande.
 
 
 ```powershell

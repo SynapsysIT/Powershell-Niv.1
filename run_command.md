@@ -1,3 +1,8 @@
+---
+icon: command-palette
+order: 999
+---
+
 # Exécuter des commandes
 
 ## Syntaxe des commandes
@@ -5,36 +10,36 @@
 Toutes les commandes PowerShell, appelés **CmdLets** se composent d’un verbe et d’un nom séparé par un tiret. Le résultat de la commande peut être influencer par l'ajout de paramètres.
 
 
-Par exemple, la commande `#!powershell Get-Service` exécutée telle quelle, renverra l'ensemble des services.
+Par exemple, la commande `Get-Service` exécutée telle quelle, renverra l'ensemble des services.
 
-Tandis que la commande `#!powershell Get-Service -Name *Net*` ne renverra que les services contenant *net* dans leur nom.
+Tandis que la commande `Get-Service -Name *Net*` ne renverra que les services contenant *net* dans leur nom.
 
 Chaque **verbe** correspond à un type d'action précis :
 
-| Verb       | Action                                     |
-| ---------- | ------------------------------------------ |
-| **GET**    | :material-arrow-right: Requeter            |
-| **SET**    | :material-arrow-right:Configurer / Définir |
-| **IMPORT** | :material-arrow-right:Importer             |
-| etc ...    | ...                                        |
+| Verb                                      | Action                                 |
+| ----------------------------------------- | -------------------------------------- |
+| [!badge variant="contrast" text="Get"]    | :icon-arrow-right: Requeter            |
+| [!badge variant="contrast" text="Set"]    | :icon-arrow-right:Configurer / Définir |
+| [!badge variant="contrast" text="Import"] | :icon-arrow-right:Importer             |
+| etc ...                                   | ...                                    |
 
 
 !!!
 [!badge target="blank" text="Get-Verb"](https://learn.microsoft.com/fr-fr/powershell/module/microsoft.powershell.core/get-verb?view=powershell-5.1) permet d'obtenir la liste des **verbs** approuvés par les best-practices Powershell
 !!!
 
-## Les 3 commandes <mark style="background: #FFF3A3A6;">indispensables</mark>
+## Les 3 commandes <span style="color:#be1212"> indispensables </span>
 
 ![](../assets/triforce.png)
 
 ### Get-Command
-`#!powershell Get-Command` permet de rechercher une commande en fonction de nom, de son **verb** ou de son module d'appartenance.
+[!badge target="blank" text="Get-Command"](https://learn.microsoft.com/fr-fr/powershell/module/microsoft.powershell.core/get-command?view=powershell-5.1) permet de rechercher une commande en fonction de nom, de son **verb** ou de son module d'appartenance.
 
 ```powershell
 Get-Command -Name "*process*"
 ```
 
-```text title="Output"
+```text Output ❱
 
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
@@ -52,7 +57,7 @@ Cmdlet          Wait-Process                                       7.0.0.0    Mi
 
 ### Get-Help
 
-La commande `#!powershell Get-Help` permet d'obtenir une aide sur le fonctionnement d'une commande.
+La commande [!badge target="blank" text="Get-Help"](https://learn.microsoft.com/fr-fr/powershell/module/microsoft.powershell.core/get-help?view=powershell-5.1)  permet d'obtenir une aide sur le fonctionnement d'une commande.
 
 Elle vous permet d'identifier les paramètres attendues, lesquels sont obligatoires ou non, le type de valeurs à leur envoyer, etc ...
 
@@ -60,7 +65,7 @@ Elle vous permet d'identifier les paramètres attendues, lesquels sont obligatoi
 Get-Help -Name "Get-Service"
 ```
 
-```text title="Output"
+```text Output ❱
 
 NAME
     Get-Service
@@ -87,12 +92,13 @@ REMARKS
 
 ```
 
-!!! note " "
-	L'ajout du paramètre **-Online** à la commande `#!powershell Get-Help`vous envoie sur la page ***Microsoft Docs*** correspondante.
+!!!
+L'ajout du paramètre **-Online** à la commande `Get-Help` vous envoie sur la page **Microsoft Docs** correspondante.
+!!!
 
 ### Get-Member
 
-`#!powershell Get-Help` vous permet d'obtenir "la carte d'identité" d'un objet obtenu par l'éxécution d'une commande ou stocké dans une variable.
+[!badge target="blank" text="Get-Member"](https://learn.microsoft.com/fr-fr/powershell/module/microsoft.powershell.utility/get-member?view=powershell-7.3)  vous permet d'obtenir *"la carte d'identité"* d'un objet obtenu par l'éxécution d'une commande ou stockée dans une variable.
 Elle vous permettra de connaitre:
 
 - Son **type**
@@ -104,7 +110,7 @@ Elle vous permettra de connaitre:
 Get-Process | Get-Member
 ```
 
-```text title="Output ❱"
+```text Output ❱
    TypeName: System.Diagnostics.Process
 
 Name                       MemberType     Definition
@@ -134,8 +140,8 @@ ToString                   Method         string ToString()
 
 ___
 
-| Verb                           | Description                                                                         |
-| ------------------------------ | ----------------------------------------------------------------------------------- |
-| **`#!powershell Get-Command`** | :material-arrow-right: Lister et chercher des commandes                             |
-| **`#!powershell Get-Help`**    | :material-arrow-right: Obtenir l'aide d'une commande                                |
-| **`#!powershell Get-Member`**  | :material-arrow-right: Connaitre le type, les propriétés et les méthodes d’un objet |
+| Commande                                                                                                                                                       | Description                                                                     |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| [!badge target="blank" text="Get-Command"](https://learn.microsoft.com/fr-fr/powershell/module/microsoft.powershell.core/get-command?view=powershell-5.1)  | :icon-arrow-right: Lister et chercher des commandes                             |
+| [!badge target="blank" text="Get-Help"](https://learn.microsoft.com/fr-fr/powershell/module/microsoft.powershell.core/get-help?view=powershell-5.1)        | :icon-arrow-right: Obtenir l'aide d'une commande                                |
+| [!badge target="blank" text="Get-Member"](https://learn.microsoft.com/fr-fr/powershell/module/microsoft.powershell.utility/get-member?view=powershell-7.3) | :icon-arrow-right: Connaitre le type, les propriétés et les méthodes d’un objet |

@@ -31,7 +31,7 @@ $Variable = 1
 $Variable | Get-Member
 ```
 
-```text title="Output ❱"
+```text Output ❱
 
    TypeName: System.Int32
 
@@ -44,7 +44,7 @@ $Variable = "1"
 $Variable | Get-Member
 ```
 
-```text title="Output ❱"
+```text Output ❱
    TypeName: System.String
 
 ...
@@ -53,7 +53,7 @@ $Variable | Get-Member
 ___
 ## Forcer le typage
 
-Il peut être néccéssaire d'avoir à forcer le type d'une variable. Pour cela on précise le type voulu entre **[ ]** avant le nom de la variable.
+Il peut être néccéssaire d'avoir à forcer le type d'une variable. Pour cela on précise le type voulu entre [!badge variant="danger" text="[ ]"] avant le nom de la variable.
 
 ```powershell
 [string]$Variable = 1               # Int en string
@@ -65,7 +65,7 @@ Il peut être néccéssaire d'avoir à forcer le type d'une variable. Pour cela 
 ___
 ## Propriétés et méthodes
 
-Les propriétés et les méthodes de l'objet stocké en variable pourront être appelé par un **.**
+Les propriétés et les méthodes de l'objet stocké en variable pourront être appelé par un [!badge variant="danger" text="."]
 
 ```powershell
 $Variable = "Ceci est une phrase"
@@ -93,3 +93,7 @@ Get-EventLog -LogName Application -After $Date
 $Service = Get-Service "Spooler"
 "Spooler service is $($Service.Status)"
 ```
+
+!!!info
+La syntaxe `$($variable.propriete)` empêche que la variable ne soit interprété comme une composante de la chaîne de caractère.
+!!!

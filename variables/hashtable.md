@@ -1,3 +1,9 @@
+---
+icon: hash
+order: 3
+---
+# Hashtable
+
 Une **Hashtable** est un tableau de correspondance clé/valeur
 
 ```powershell
@@ -6,15 +12,14 @@ $Environemment= @{PROD= "SERVER-PROD"; DEV = "SERVER-DEV"; HOM = "SERVER-H
 
 Les valeurs peuvent alors être appelés en utilisant leur clé
 
-+++Command
 ```powershell
 $Environemment["PROD"]
 ```
-+++ Output
+
+
 ```text Output ❱
 "SERVER-PROD"
 ```
-+++
 
 Ou comme pour appelé la propriété d'un objet
 
@@ -22,6 +27,6 @@ Ou comme pour appelé la propriété d'un objet
 $Environemment.PROD
 ```
 
-```text title="Output ❱"
+```text Output ❱
 "SERVER-PROD"
 ```
