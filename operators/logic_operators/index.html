@@ -4,42 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Powershell-Niv.1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.743595752645">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.743615992718">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.1.0">
 
     <!-- Primary Meta Tags -->
-    <title>Pipeline &amp; Objets</title>
-    <meta name="title" content="Pipeline & Objets">
-    <meta name="description" content="Contrairement à Batch ou Bash qui sont des langages dit « textes », Powershell est un langage objet.">
+    <title>Op&#233;rateurs logiques</title>
+    <meta name="title" content="Opérateurs logiques">
+    <meta name="description" content="Commande">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://synapsysit.github.io/Powershell-Niv.1/bases/pipeline_and_objets/">
+    <link rel="canonical" href="https://synapsysit.github.io/Powershell-Niv.1/operators/logic_operators/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://synapsysit.github.io/Powershell-Niv.1/bases/pipeline_and_objets/">
-    <meta property="og:title" content="Pipeline & Objets">
-    <meta property="og:description" content="Contrairement à Batch ou Bash qui sont des langages dit « textes », Powershell est un langage objet.">
-    <meta property="og:image" content="https://synapsysit.github.io/Powershell-Niv.1/assets/objets.png">
+    <meta property="og:url" content="https://synapsysit.github.io/Powershell-Niv.1/operators/logic_operators/">
+    <meta property="og:title" content="Opérateurs logiques">
+    <meta property="og:description" content="Commande">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://synapsysit.github.io/Powershell-Niv.1/bases/pipeline_and_objets/">
-    <meta property="twitter:title" content="Pipeline & Objets">
-    <meta property="twitter:description" content="Contrairement à Batch ou Bash qui sont des langages dit « textes », Powershell est un langage objet.">
-    <meta property="twitter:image" content="https://synapsysit.github.io/Powershell-Niv.1/assets/objets.png">
+    <meta property="twitter:url" content="https://synapsysit.github.io/Powershell-Niv.1/operators/logic_operators/">
+    <meta property="twitter:title" content="Opérateurs logiques">
+    <meta property="twitter:description" content="Commande">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("/Powershell-Niv.1/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../assets/logo_rhino_red.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.1.0.743595752645" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.1.0.743615992718" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.1.0.743595752645" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.1.0.743615992718" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.1.0.743595752645" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.1.0.743595752645" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.1.0.743615992718" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -159,50 +156,40 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="pipeline--objets" class="break-words">
+<doc-anchor-target id="opérateurs-logiques" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pipeline--objets">#</doc-anchor-trigger>
-        <span>Pipeline &amp; Objets</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#opérateurs-logiques">#</doc-anchor-trigger>
+        <span>Opérateurs logiques</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="language-objet">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#language-objet">#</doc-anchor-trigger>
-        <span>Language Objet</span>
-    </h2>
-</doc-anchor-target>
-<ul>
-<li><p>Contrairement à <strong>Batch</strong> ou <strong>Bash</strong> qui sont des langages dit « textes », <strong>Powershell est un langage objet</strong>.</p>
-</li>
-<li><p>Sous PowerShell, chaque commande renverra un objet d’un type précis possédant ses <strong>propriétés</strong> et ses <strong>méthodes</strong>.</p>
-</li>
-</ul>
-<p><figure class="content-center">
-    <img src="../../assets/objets.png" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<doc-anchor-target id="le-pipeline">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#le-pipeline">#</doc-anchor-trigger>
-        <span>Le Pipeline</span>
-    </h2>
-</doc-anchor-target>
-<ul>
-<li><p>Le pipeline, symbolisée par le caractère <strong>|</strong> ( <ins>altgr+6</ins> ) permet de <strong>chainer</strong> plusieurs commandes entre elles.</p>
-</li>
-<li><p>Autrement dit, la <strong>sortie</strong> d&#x27;une commande correspond à l&#x27;<strong>entrée</strong> de la suivante.</p>
-</li>
-<li><p>Les valeurs des paramètres de la deuxième commande lui sont fourni par la première commande.</p>
-</li>
-</ul>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-powershell"><code v-pre class="language-powershell">Get-Process  -Name notepad
-Stop-Process -Name notepad</code></pre>
-</doc-codeblock></div>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-powershell"><code v-pre class="language-powershell">Get-Process  -Name notepad | Stop-Process</code></pre>
-</doc-codeblock></div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Commande</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>-and</code></td>
+<td>ET</td>
+</tr>
+<tr>
+<td><code v-pre>-or</code></td>
+<td>OU</td>
+</tr>
+<tr>
+<td><code v-pre>-not</code></td>
+<td>N&#x27;est pas ou n&#x27;existe pas</td>
+</tr>
+<tr>
+<td><code v-pre>-xor</code></td>
+<td>OU Exclusif [&quot;Le résultat n&#x27;est vrai que si une et une seule des valeurs est vrai&quot;]</td>
+</tr>
+</tbody>
+</table>
+</div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -212,20 +199,20 @@ Stop-Process -Name notepad</code></pre>
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../bases/run_command/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../operators/string_operators/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Exécuter des commandes</span>
+                                                <span class="block mt-1">Comparer des chaînes de caractères</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../variables/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../operators/manipulate_string/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Les variables</span>
+                                                <span class="block mt-1">Manipuler des chaînes de caractères</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -269,6 +256,6 @@ Stop-Process -Name notepad</code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Pipeline & Objets", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Opérateurs logiques", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
