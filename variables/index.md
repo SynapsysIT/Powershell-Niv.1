@@ -6,13 +6,13 @@
     * Un type 
     * Une valeur
 
-Sous PowerShell, une variable est précédée du signe : **$** 
+Sous PowerShell, une variable est précédée du signe : [!badge variant="danger" text="$"]
 
 Le contenu d'une variable peut être une valeur unique, ou une **collection** d'objets
 ___
 ## Assignation de variables
 
-L'assignation d'une variable se fait avec le symbole **=**
+L'assignation d'une variable se fait avec le symbole [!badge variant="danger" text="="]
 
 ```powershell
 $Variable = "ma variable"

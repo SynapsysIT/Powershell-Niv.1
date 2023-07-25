@@ -11,10 +11,15 @@ $Computer= [PSCustomObject]@{
 
 ```
 
-Il est possible de compléter l'objet via l'utilisation de la commande `#!powershell Add-Member`
+Il est possible de compléter l'objet via l'utilisation de la commande `Add-Member`
+
+
+[!badge Add-Member]
+
+[!badge variant="dark" text="Add-Member"]
 
 ```powershell
-$Computer| Add-Member -MemberType NoteProperty -Name RAM -Value "512Mo
+$Computer | Add-Member -MemberType NoteProperty -Name RAM -Value "512Mo
 ```
 
 

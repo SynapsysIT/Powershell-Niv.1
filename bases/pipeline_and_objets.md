@@ -6,7 +6,7 @@
 
 * Sous PowerShell, chaque commande renverra un objet d’un type précis possédant ses **propriétés** et ses **méthodes**.
 
-![objet](assets/objets.png)
+![](../assets/objets.png)
 
 ## Le Pipeline
 

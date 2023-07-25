@@ -1,3 +1,9 @@
+---
+icon: rocket
+---
+
+![](assets/powershell-social.png)
+
 # Introduction
 
 ## Qu'est ce que Powershell ?

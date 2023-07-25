@@ -1,5 +1,7 @@
+# Exécuter des commandes
+
 ## Syntaxe des commandes
-![Syntax](assets/syntax.png)
+![Syntax](../assets/syntax.png)
 Toutes les commandes PowerShell, appelés **CmdLets** se composent d’un verbe et d’un nom séparé par un tiret. Le résultat de la commande peut être influencer par l'ajout de paramètres.
 
 
@@ -17,13 +19,13 @@ Chaque **verbe** correspond à un type d'action précis :
 | etc ...    | ...                                        |
 
 
-!!! note " "
-	**`#!powershell Get-Verb`** permet d'obtenir la liste des **verbs** approuvés par les best-practices Powershell
-
+!!!
+[!badge target="blank" text="Get-Verb"](https://learn.microsoft.com/fr-fr/powershell/module/microsoft.powershell.core/get-verb?view=powershell-5.1) permet d'obtenir la liste des **verbs** approuvés par les best-practices Powershell
+!!!
 
 ## Les 3 commandes <mark style="background: #FFF3A3A6;">indispensables</mark>
 
-![Triforce](assets/triforce.png)
+![](../assets/triforce.png)
 
 ### Get-Command
 `#!powershell Get-Command` permet de rechercher une commande en fonction de nom, de son **verb** ou de son module d'appartenance.
