@@ -10,7 +10,7 @@ order: 6
 "Le héros s'appelle Zelda !" -replace "Zelda","Link" 
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 Le héros s'appelle Link !
 ```
 
@@ -20,7 +20,7 @@ Le héros s'appelle Link !
 "nom.prenom@societe.com" -split "@" 
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 nom.prenom
 societe.com
 ```
@@ -35,6 +35,6 @@ Le résulat obtenu est une `array` (liste) d'objet de type **string**
 "nom.prenom","societe.com" -join "@"
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 nom.prenom@societe.com
 ```

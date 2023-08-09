@@ -31,7 +31,7 @@ $Variable = 1
 $Variable | Get-Member
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 
    TypeName: System.Int32
 
@@ -44,7 +44,7 @@ $Variable = "1"
 $Variable | Get-Member
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
    TypeName: System.String
 
 ...

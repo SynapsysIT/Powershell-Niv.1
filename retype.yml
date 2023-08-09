@@ -9,7 +9,7 @@ branding:
   colors:
     label:                  # Label colors
       text: "#ffffff"       # Custom color for the label text.
-      background: "#be1212" # Custom color for the label background.
+      background: "#8cc152" # Custom color for the label background.
 
 favicon: assets/logo_rhino_red.png
 

@@ -27,6 +27,6 @@ Les **propriétés** peuvent alors être appelés comme n'importe quel autre obj
 $Computer.Name
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 "HAL9000"
 ```

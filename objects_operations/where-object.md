@@ -12,7 +12,7 @@ $names = @( "Aaron", "Albert", "Alphonse","Julien", "Mathieu", "Lucile", "Cédri
 $names | Where-Object { $_ -like "A*" }
 ```
 
-```text Output ❱ 
+```text Output :icon-chevron-right: 
 Aaron
 Albert
 Alphonse

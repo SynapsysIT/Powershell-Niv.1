@@ -11,7 +11,7 @@ $Variable = "Powershell"
 $Variable -eq "Powershell"
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 True
 ```
 
@@ -26,7 +26,7 @@ $String -like "Text*"
 $String -like "*ext*"
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 True
 ```
 
@@ -37,7 +37,7 @@ $String = "Chaine de charactère complexe"
 $String -match "char"
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 True
 ```
 
@@ -47,7 +47,7 @@ True
 "192.168.0.10" -match "(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))"
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 True
 ```
 
@@ -60,7 +60,7 @@ $Liste = @("Valeur1","Valeur2","Valeur3")
 $Liste -contains "Valeur2"
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 True
 ```
 

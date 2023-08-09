@@ -19,9 +19,9 @@ Chaque **verbe** correspond à un type d'action précis :
 | Verb                                      | Action                                 |
 | ----------------------------------------- | -------------------------------------- |
 | [!badge variant="contrast" text="Get"]    | :icon-arrow-right: Requeter            |
-| [!badge variant="contrast" text="Set"]    | :icon-arrow-right:Configurer / Définir |
-| [!badge variant="contrast" text="Import"] | :icon-arrow-right:Importer             |
-| etc ...                                   | ...                                    |
+| [!badge variant="contrast" text="Set"]    | :icon-arrow-right: Configurer / Définir |
+| [!badge variant="contrast" text="Import"] | :icon-arrow-right: Importer             |
+| etc.                                   | ...                                    |
 
 
 !!!
@@ -39,7 +39,7 @@ Chaque **verbe** correspond à un type d'action précis :
 Get-Command -Name "*process*"
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
@@ -65,7 +65,7 @@ Elle vous permet d'identifier les paramètres attendues, lesquels sont obligatoi
 Get-Help -Name "Get-Service"
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 
 NAME
     Get-Service
@@ -110,7 +110,7 @@ Elle vous permettra de connaitre:
 Get-Process | Get-Member
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
    TypeName: System.Diagnostics.Process
 
 Name                       MemberType     Definition

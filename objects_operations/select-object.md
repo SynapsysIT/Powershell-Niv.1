@@ -19,7 +19,7 @@ ___
 Get-Disk -Number 0
 ```
 
-```text Output ❱ 
+```text Output :icon-chevron-right: 
 
 Number Friendly Name                      Serial Number                    HealthStatus         OperationalStatus      Total Size Partition
                                                                                                                                   Style
@@ -34,7 +34,7 @@ Number Friendly Name                      Serial Number                    Healt
 Get-Disk -Number 0 | Select-Object *
 ```
 
-```text Output ❱ 
+```text Output :icon-chevron-right: 
 
 DiskNumber            : 0
 PartitionStyle        : GPT
@@ -83,7 +83,7 @@ CimSystemProperties   : Microsoft.Management.Infrastructure.CimSystemProperties
 ```
 
 
-## Créer une propriétés custom
+## Créer une propriété custom
 
 ```powershell
 Get-ChildItem | Select-Object Name,@{ Name = "Taille en MB" ; expression={ ($_.Length/1MB) } }

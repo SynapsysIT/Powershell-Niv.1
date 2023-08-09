@@ -3,7 +3,7 @@ icon: rocket
 order: 1000
 ---
 
-![](assets/powershell-social.png)
+![](assets/rhino_shell.png)
 
 # Introduction
 

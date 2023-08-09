@@ -11,11 +11,11 @@ $names = @( "Aaron", "Albert", "Alphonse","Julien", "Mathieu", "Lucile", "Cédri
 $names | Sort-Object
 ```
 
-```text Output ❱ 
+```text Output :icon-chevron-right: 
 Aaron
 Albert
 Alphonse
-C├®dric
+Cédric
 Julien
 Lucile
 Mathieu

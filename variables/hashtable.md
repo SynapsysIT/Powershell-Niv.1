@@ -17,7 +17,7 @@ $Environemment["PROD"]
 ```
 
 
-```text Output ❱
+```text Output :icon-chevron-right:
 "SERVER-PROD"
 ```
 
@@ -27,6 +27,6 @@ Ou comme pour appelé la propriété d'un objet
 $Environemment.PROD
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 "SERVER-PROD"
 ```

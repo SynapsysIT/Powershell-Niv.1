@@ -11,8 +11,7 @@ order: 7
 Get-Service | Group-Object Status
 ```
 
-```text Output ❱ 
-```text Output ❱ 
+```text Output :icon-chevron-right: 
 Count Name                      Group
 ----- ----                      -----
   173 Stopped                   {AarSvc_3267b5, AESMService, AJRouter,...}
@@ -26,11 +25,11 @@ $names = @( "Aaron", "Albert", "Alphonse","Julien", "Mathieu", "Lucile", "Cédri
 $names | Group-Object -Property Length
 ```
 
-```text Output ❱ 
+```text Output :icon-chevron-right: 
 Count Name                      Group
 ----- ----                      -----
     1 5                         {Aaron}
-    4 6                         {Albert, Julien, Lucile, C├®dric}
+    4 6                         {Albert, Julien, Lucile, Cédric}
     1 7                         {Mathieu}
     1 8                         {Alphonse}
     1 9                         {S├®bastien}

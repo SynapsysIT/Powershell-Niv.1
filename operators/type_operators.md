@@ -14,7 +14,7 @@ L'opérateur `-as` peut aussi permettre de vérifier qu'une donnée est correcte
 "192.168.1.10" -as [ipaddress]
 ```
 
-```text Output ❱
+```text Output :icon-chevron-right:
 AddressFamily      : InterNetwork
 ScopeId            : 
 IsIPv6Multicast    : False

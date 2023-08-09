@@ -12,3 +12,6 @@ $Disk | Get-Member
 
 $Disk.IsSystem
 ```
+
+
+[!button variant="success" icon="arrow-left" text="Retourner à l'exercice"](exercice1.md)
