@@ -1,0 +1,53 @@
+﻿# Introduction
+
+> Powershell est avant tout un shell, c’est-à-dire une interface utilisateur permettant de traduire les commandes utilisateurs en exécution au niveau du système.
+
+- [Introduction](https://synapsysit.github.io/Powershell-Niv.1/index.md): Introduction
+- [Exécuter des commandes](https://synapsysit.github.io/Powershell-Niv.1/run_command.md): Syntax Toutes les commandes PowerShell, appelés CmdLets se composent d’un verbe et d’un nom séparé par un tiret. Le résultat de la commande peut être influencer par l'ajout de paramètres.
+- [Pipeline & Objets](https://synapsysit.github.io/Powershell-Niv.1/pipeline_and_objets.md): Contrairement à Batch ou Bash qui sont des langages dit « textes », Powershell est un langage objet.
+- [Les variables](https://synapsysit.github.io/Powershell-Niv.1/variables/index.md): La variable est un emplacement mémoire. Elle se compose de 3 éléments :
+- [Scripts et Fonctions](https://synapsysit.github.io/Powershell-Niv.1/scripts_functions/index.md): Un script est un enchainement de multiples commandes, actions et opérations permettant l’automatisation d’un processus complexe.
+
+## Les variables
+
+- [Array](https://synapsysit.github.io/Powershell-Niv.1/variables/array.md): Une array est une liste de valeur
+- [Hashtable](https://synapsysit.github.io/Powershell-Niv.1/variables/hashtable.md): Une Hashtable est un tableau de correspondance clé/valeur
+- [PSCustomObject](https://synapsysit.github.io/Powershell-Niv.1/variables/pscustom.md): Le PSCustomObject permet la création d'un objet personnalisé dans lequel on pourra définire l'ensemble de ses propriétés
+- [Variables automatiques](https://synapsysit.github.io/Powershell-Niv.1/variables/automatic_variables.md): Commande
+
+## Operators
+
+- [Comparer des nombres](https://synapsysit.github.io/Powershell-Niv.1/operators/numeric_operators.md): Commande
+- [Comparer des chaînes de caractères](https://synapsysit.github.io/Powershell-Niv.1/operators/string_operators.md): -match permet aussi d'utiliser le format Regex pour comparer un format de chaîne attendu avec une valeur:
+- [Opérateurs logiques](https://synapsysit.github.io/Powershell-Niv.1/operators/logic_operators.md): Commande
+- [Manipuler des chaînes de caractères](https://synapsysit.github.io/Powershell-Niv.1/operators/manipulate_string.md): Le résulat obtenu est une array (liste) d'objet de type string
+- [Opérateurs Arithmétiques](https://synapsysit.github.io/Powershell-Niv.1/operators/arithmetic_operators.md): Commande
+- [Opérateur de type](https://synapsysit.github.io/Powershell-Niv.1/operators/type_operators.md): Commande
+
+## Objets: Filtrer,Manipuler,Exporter
+
+- [Where-Object](https://synapsysit.github.io/Powershell-Niv.1/objects_operations/where-object.md): permet de trier une collection pour n'afficher que ceux répondant à des conditions précises.
+- [Select-Object](https://synapsysit.github.io/Powershell-Niv.1/objects_operations/select-object.md): permet de ne sélectionner que certaines propriétés de l'objet ou d'en créer de nouvelles.
+- [Sort-Object](https://synapsysit.github.io/Powershell-Niv.1/objects_operations/sort-object.md): permet de trier une collection d'objet en fonction de la valeur de ses propriétés
+- [Group-Object](https://synapsysit.github.io/Powershell-Niv.1/objects_operations/group-object.md): permet de regrouper les objets d'une collection en fonction de la valeur d'une de leur propriétés. Cette commande renvoie un nouvel objet de type groupinfo
+- [Foreach-Object](https://synapsysit.github.io/Powershell-Niv.1/objects_operations/foreach-object.md): permet de réaliser une opération pour chaque objet d'une collection
+- [Compare-Object](https://synapsysit.github.io/Powershell-Niv.1/objects_operations/compare-object.md): permet de comparer deux collections d'objets.
+- [Exportation / Importation](https://synapsysit.github.io/Powershell-Niv.1/objects_operations/exportation.md): permet d'exporter dans un fichier brut le contenu du pipeline.
+
+## Scripts et Fonctions
+
+- [Scripts](https://synapsysit.github.io/Powershell-Niv.1/scripts_functions/scripts.md): Un script est un fichier texte au format .ps1 contenant un enchaînement de commande, de structures et de fonctions.
+- [Fonctions](https://synapsysit.github.io/Powershell-Niv.1/scripts_functions/function.md): Une fonction est un morceau de code nommé.
+- [Les structures](https://synapsysit.github.io/Powershell-Niv.1/scripts_functions/structures.md): Le bloc permet l'éxécution d'un bloc de code uniquement dans le cas où une condition est remplie.
+
+## SysAdmin avec Powershell
+
+- [Remote Powershell](https://synapsysit.github.io/Powershell-Niv.1/sysadmin/remote.md): A l'instar de SSH sur un système Unix, Powershell permet l'ouverture de session distante et l'exécution sur des machines distantes.
+- [Credentials](https://synapsysit.github.io/Powershell-Niv.1/sysadmin/credentials.md): permet l'enregistrement dans une variable des données d'authentification qui pourront être ensuite envoyé aux commandes ayant un paramètre -Credential
+- [Les Modules](https://synapsysit.github.io/Powershell-Niv.1/sysadmin/modules.md): Un module Powershell est une bibliothèque de commandes (fonctions) dédié à la gestion ou l'administration d'un élément précis (Application / Api / Rôle Windows Server / ...).
+- [Cmd vs powershell](https://synapsysit.github.io/Powershell-Niv.1/sysadmin/cmd_vs_powershell.md): Même si l'habitude rends l'utilisation des commandes DOS native plus rapide, il est important de noter que l'utilisation de leur équivalent Powershell, comme toutes les commandes Powershell renvoie un objet permettant une utilisation plus fine du résultat.
+
+## Exercices
+
+- [Exercice 2](https://synapsysit.github.io/Powershell-Niv.1/exercices/exercice2.md): Récupèrez les 5 processus les plus consommateur de CPU
+- [Exercices 1](https://synapsysit.github.io/Powershell-Niv.1/exercices/exercice1.md): Recherchez la commande permettant de récupérer les infos d'un disque dur.
