@@ -28,7 +28,7 @@ $services[-1].Status
 
 ___
 
-# Solution Exercice 1.2
+# Solution Exercice 1.3
 
 ```powershell
 $srv1 = [PSCustomObject]@{

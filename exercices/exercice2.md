@@ -1,9 +1,8 @@
-# Exercice 2
+# Exercices 2
 
 ___
+
 ## Exercice 2.1
-
-
 
 1. Récupèrez les 5 processus les plus consommateur de CPU
 2. Affichez uniquement leur noms, Id et CPU, triés par consommation décroissante
