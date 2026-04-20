@@ -12,6 +12,7 @@ $Disk | Get-Member
 
 $Disk.IsSystem
 ```
+
 ___
 
 # Solution Exercice 1.2

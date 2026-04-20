@@ -92,6 +92,6 @@ $Service = Get-Service "Spooler"
 "Spooler service is $($Service.Status)"
 ```
 
-!!!info
+!!!warning
 La syntaxe `$($variable.propriete)` empêche que la variable ne soit interprété comme une composante de la chaîne de caractère.
 !!!
