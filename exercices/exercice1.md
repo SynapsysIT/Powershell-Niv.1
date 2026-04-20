@@ -12,7 +12,7 @@ ___
 
 ## Exercice 1.2
 
-Stockez la liste de tous les services Windows dans une variable. Ensuite, sans relancer la commande, réponds aux questions suivantes :
+Stockez la liste de tous les services Windows dans une variable. Ensuite, sans relancer la commande, répondez aux questions suivantes :
 
 1. Combien y a-t-il de services au total ?
 2. Quel est le nom du premier service de la liste ?

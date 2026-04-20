@@ -51,4 +51,4 @@
 
 - [Exercices 1](https://synapsysit.github.io/Powershell-Niv.1/exercices/exercice1.md): Recherchez la commande permettant de récupérer les infos d'un disque dur.
 - [Exercices 2](https://synapsysit.github.io/Powershell-Niv.1/exercices/exercice2.md): Récupèrez les 5 processus les plus consommateur de CPU
-- [Exercices 3](https://synapsysit.github.io/Powershell-Niv.1/exercices/exercices3.md): Écrivez une fonction Convert-Octects qui prend en paramètre une taille en octets et une unité cible, et retourne un objet contenant la valeur convertie.
+- [Exercices 3](https://synapsysit.github.io/Powershell-Niv.1/exercices/exercices3.md): Écrivez une fonction Convert-Octets qui prend en paramètre une taille en octets et une unité cible, et retourne un objet contenant la valeur convertie.

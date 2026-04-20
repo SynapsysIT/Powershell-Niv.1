@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/Powershell-Niv.1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.830019365681">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.830019659553">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.5.3">
@@ -13,7 +13,7 @@
     <!-- Primary Meta Tags -->
     <title>Exercices 3</title>
     <meta name="title" content="Exercices 3">
-    <meta name="description" content="Écrivez une fonction Convert-Octects qui prend en paramètre une taille en octets et une unité cible, et retourne un objet contenant la valeur convertie.">
+    <meta name="description" content="Écrivez une fonction Convert-Octets qui prend en paramètre une taille en octets et une unité cible, et retourne un objet contenant la valeur convertie.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://synapsysit.github.io/Powershell-Niv.1/exercices/exercices3/">
@@ -23,7 +23,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://synapsysit.github.io/Powershell-Niv.1/exercices/exercices3/">
     <meta property="og:title" content="Exercices 3">
-    <meta property="og:description" content="Écrivez une fonction Convert-Octects qui prend en paramètre une taille en octets et une unité cible, et retourne un objet contenant la valeur convertie.">
+    <meta property="og:description" content="Écrivez une fonction Convert-Octets qui prend en paramètre une taille en octets et une unité cible, et retourne un objet contenant la valeur convertie.">
     <meta property="og:site_name" content="Formation Powershell">
     <meta property="og:locale" content="en_US">
 
@@ -31,7 +31,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://synapsysit.github.io/Powershell-Niv.1/exercices/exercices3/">
     <meta name="twitter:title" content="Exercices 3">
-    <meta name="twitter:description" content="Écrivez une fonction Convert-Octects qui prend en paramètre une taille en octets et une unité cible, et retourne un objet contenant la valeur convertie.">
+    <meta name="twitter:description" content="Écrivez une fonction Convert-Octets qui prend en paramètre une taille en octets et une unité cible, et retourne un objet contenant la valeur convertie.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://synapsysit.github.io/Powershell-Niv.1/exercices/exercices3.md">
@@ -39,11 +39,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../assets/logo_rhino_red.png" />
-    <link href="../../resources/css/retype.css?v=4.5.3.830019365681" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.5.3.830019659553" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.3.830019365681" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.3.830019659553" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.3.830019365681" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.3.830019659553" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -141,7 +141,7 @@
                 <!-- Page content  -->
 <h1 id="exercices-3">Exercices 3</h1>
 <h2 id="function">Function</h2>
-<p>Écrivez une fonction <code translate="no" v-pre>Convert-Octects</code> qui prend en paramètre une taille en octets et une unité cible, et retourne un objet contenant la valeur convertie.</p>
+<p>Écrivez une fonction <code translate="no" v-pre>Convert-Octets</code> qui prend en paramètre une taille en octets et une unité cible, et retourne un objet contenant la valeur convertie.</p>
 <p>La fonction doit :</p>
 <ul>
 <li>Accepter un paramètre $Octets de type <code translate="no" v-pre>[long]</code>, obligatoire, en position 0</li>
@@ -160,7 +160,7 @@
         </div>
         <div class="pr-5 ml-3 w-full">
 <ul>
-<li>Pour arrondir un nombre : [math]::Round( <em>valeur</em>, <em>nb_apres_virgule</em>)</li>
+<li>Pour arrondir un nombre : <code translate="no" v-pre>[math]::Round( valeur, nb_apres_virgule)</code></li>
 <li>Pour convertir, vous pouvez utiliser les opérateurs spéciaux: <code translate="no" v-pre>/1GB</code>, <code translate="no" v-pre>/1MB</code>, <code translate="no" v-pre>/1KB</code></li>
 </ul>
         </div>

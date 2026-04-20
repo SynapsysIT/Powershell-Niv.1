@@ -1,7 +1,7 @@
 # Solution Fonction
 
 ```powershell
-function Convert-Taille
+function Convert-Octets
 {
     [CmdletBinding()]
     param(
@@ -60,4 +60,4 @@ else
 }
 ```
 
-[!button variant="success" icon="arrow-left" text="Retourner à l'exercice"](exercice3.md)
+[!button variant="success" icon="arrow-left" text="Retourner à l'exercice"](exercices3.md)
