@@ -22,7 +22,15 @@ ___
 
 ## Exercice 1.3
 
-1. Créez un PSCustomObject pour un serveur (SRV-WEB01, 192.168.1.10, Windows Server 2022, Online)
+1. Créez un PSCustomObject pour un serveur reprenant ces propriétés:
+   
+```
+Nom: SRV-WEB01
+IP: 192.168.1.10
+OS: Windows Server 2022
+Status: Online
+```
+
 2. Affichez une chaine de texte contenant son nom et son IP
 3. Modifiez son Statut en Offline
 
